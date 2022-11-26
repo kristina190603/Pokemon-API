@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(80, 155, 155);
+  }
+  
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+  }
+  
+  #app {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .pokemon {
+    padding: 5vw;
+    width: 50vw;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+    transition: font-size 500ms;
+  }
+  
+  .pokemon:hover {
+    /* font-size: 1.8rem; */
+    color: black;
+  }
+  
+  .overlay {
+    position: fixed;
+    background-color: rgba(39, 39, 39, 0.8);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 50;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 500ms;
+    position: fixed;
+    background-color: rgb(80, 155, 155);
+    border: 1px solid gray;
+    border-radius: 3vw;
+    width: 60vw;
+    height: 60vw;
+    top: 5%;
+    left: 25vw;
+    z-index: 100;
+    color: white;
+    font-size: 3vw;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    padding: 1vw;
+  }
+  
+  button {
+    padding: 1vw 3vw;
+    background-color: rgb(80, 155, 155);
+    border: 1px solid ghostwhite;
+    border-radius: 5px;
+    transition: background-color 500ms;
+    /* cursor: pointer; */
+    margin-bottom: 2vh;
+  }
+  
+  button:hover {
+    background-color: rgb(25, 0, 255);
+  }
+  
+  img {
+    width: 20vw;
+  }
+  
